@@ -1,9 +1,6 @@
-# Git-CheatSheet
-Git Cheatsheet with list of git commands for making reference reference every time.
-
 **Github CheatSheet**
 ----------------------------------
-<img src="">
+
 Github is a distributed version control system which helps to manage the repositories.
 
 These are a list of few commands that you can use frequently on github(git bash)
@@ -230,3 +227,15 @@ To look at all the remote branches.
 * Run all commits in the temporary area on top of our master
 ```
 ```
+46. git commit —amend -m "fixing a typo" 
+
+* git commit -m "fixing a typeo" and hit "Enter". Quickly we realize that not only were we trying to fix a typo in the application, but now we need to fix the "typeo" in the commit message.
+
+* Running the command git commit —amend -m "fixing a typo" does the trick. Now when our push our commit, our co-workers won’t see that our "typo" was original spelled "typeo".
+
+```
+```
+47. git cherry-pick
+* we can pick a particular branch that has a commit and pull it into another. Let’s walk through this.
+
+*Let’s say we have a branch branch-test and we have committed all of our changes. There’s another branch, we’ll just use master but this can be any branch, and we want to pull in branch-test’s commit. By using the command, git cherry-pick branch-test we can get that entire commit into another branch.
